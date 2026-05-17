@@ -178,7 +178,6 @@
                                     <h6 class="fw-bold text-muted mb-3">Photos</h6>
                                     @if($registration->image)
                                         <div class="mb-3 text-start">
-
                                             <a href="{{ asset('storage/' . $registration->image) }}" target="_blank">
                                                 <img src="{{ asset('storage/' . $registration->image) }}"
                                                     alt="Database Symptoms Photo" class="img-fluid rounded shadow-sm border"

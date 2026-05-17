@@ -162,6 +162,10 @@
                                             </a>
                                             <p class="mt-2 small text-muted"><i class="bi bi-info-circle me-1"></i> Click to
                                                 view full resolution</p>
+                                            <button type="button" class="btn btn-sm btn-info text-white fw-bold mt-2"
+                                                onclick="addPhotoToReferral('{{ asset('storage/' . $registration->image) }}')">
+                                                <i class="bi bi-plus-circle me-1"></i> Add to Referral
+                                            </button>
                                         </div>
                                     @else
                                         <p class="text-muted">No photos found in database for this registration.</p>
