@@ -152,24 +152,44 @@
                                 <!-- Photos Tab -->
                                 <div class="tab-pane fade" id="photos" role="tabpanel">
                                     <h6 class="fw-bold text-muted mb-3">Photos</h6>
-                                    @if($registration->image)
+                                    @php
+                                        $imagePath = $registration->image ?? $registration->pdf ?? null;
+                                        $imageUrl = null;
+                                        if ($imagePath) {
+                                            if (strpos($imagePath, 'http://') === 0 || strpos($imagePath, 'https://') === 0) {
+                                                $imageUrl = $imagePath;
+                                            } elseif (strpos($imagePath, 'storage/') === 0) {
+                                                $imageUrl = asset($imagePath);
+                                            } else {
+                                                $imageUrl = asset('storage/' . $imagePath);
+                                            }
+                                        }
+                                    @endphp
+                                    @if($imageUrl)
                                         <div class="mb-3 text-start">
-
-                                            <a href="{{ asset('storage/' . $registration->image) }}" target="_blank">
-                                                <img src="{{ asset('storage/' . $registration->image) }}"
-                                                    alt="Database Symptoms Photo" class="img-fluid rounded shadow-sm border"
-                                                    style="max-width: 500px; height: auto;">
+                                            <a href="{{ $imageUrl }}" target="_blank" class="d-inline-block position-relative photo-hover-container">
+                                                <img src="{{ $imageUrl }}"
+                                                    alt="Database Symptoms Photo" class="img-fluid rounded shadow border"
+                                                    style="max-width: 500px; height: auto; transition: all 0.3s ease;">
                                             </a>
                                             <p class="mt-2 small text-muted"><i class="bi bi-info-circle me-1"></i> Click to
                                                 view full resolution</p>
                                             <button type="button" class="btn btn-sm btn-info text-white fw-bold mt-2"
-                                                onclick="addPhotoToReferral('{{ asset('storage/' . $registration->image) }}')">
+                                                onclick="addPhotoToReferral('{{ $imageUrl }}')">
                                                 <i class="bi bi-plus-circle me-1"></i> Add to Referral
                                             </button>
                                         </div>
                                     @else
                                         <p class="text-muted">No photos found in database for this registration.</p>
                                     @endif
+
+                                    <style>
+                                        .photo-hover-container:hover img {
+                                            transform: scale(1.015);
+                                            box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+                                            border-color: #0dcaf0 !important;
+                                        }
+                                    </style>
                                 </div>
                                 <!-- end photos tab code -->
                                 <!-- Pharmacy Tab -->
@@ -517,4 +537,35 @@
 
 
     <!-- end code seven model -->
+    <script>
+        // Add photo from gallery to referral tool
+        window.addPhotoToReferral = function (imgUrl) {
+            const editor = document.getElementById('referralEditor');
+            if (!editor) {
+                const modalEl = document.getElementById('EDREFERRALModel');
+                if (modalEl) {
+                    const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                    modal.show();
+                    setTimeout(() => {
+                        const newEditor = document.getElementById('referralEditor');
+                        if (newEditor) insertImageToEditor(newEditor, imgUrl);
+                    }, 500);
+                }
+            } else {
+                insertImageToEditor(editor, imgUrl);
+            }
+            function insertImageToEditor(editorElem, url) {
+                const img = document.createElement('img');
+                img.src = url;
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.borderRadius = '8px';
+                img.style.marginTop = '15px';
+                img.style.marginBottom = '15px';
+                img.className = 'referral-attached-image';
+                editorElem.appendChild(img);
+                editorElem.focus();
+            }
+        };
+    </script>
 @endsection

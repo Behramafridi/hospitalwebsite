@@ -116,127 +116,356 @@
             transform: translateY(-3px);
         }
     }
+
+    /* Premium Clinical Theme Styles */
+    .clinical-document {
+        background-color: #FAF8F5 !important;
+        font-family: 'Georgia', 'Times New Roman', serif !important;
+        padding: 40px !important;
+        color: #3C3529 !important;
+    }
+
+    .clinical-header {
+        border-top: 1px solid #D6C7B3;
+        border-bottom: 1px solid #D6C7B3;
+        padding: 15px 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .clinical-logo {
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #3C3529;
+    }
+
+    .clinical-logo span {
+        color: #B89C79;
+    }
+
+    .clinical-title-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        border-bottom: 2px solid #3C3529;
+        padding-bottom: 5px;
+        margin-bottom: 25px;
+    }
+
+    .clinical-title {
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3C3529;
+        margin: 0;
+    }
+
+    .clinical-meta {
+        font-size: 0.85rem;
+        color: #5C5549;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-grid {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .clinical-col {
+        flex: 1;
+    }
+
+    .clinical-section-header {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #9E8665;
+        text-transform: uppercase;
+        border-bottom: 1px solid #D6C7B3;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 0;
+        border-bottom: 1px dotted #E6DEC3;
+        font-size: 0.85rem;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-row-label {
+        font-weight: 700;
+        color: #5C5549;
+        text-transform: uppercase;
+    }
+
+    .clinical-row-value {
+        color: #3C3529;
+        font-style: italic;
+    }
+
+    .clinical-intro-box {
+        border: 1px dashed #D6C7B3;
+        background-color: rgba(214, 199, 179, 0.05);
+        padding: 15px 20px;
+        border-radius: 4px;
+        font-style: italic;
+        font-size: 1rem;
+        color: #5C5549;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .clinical-details-header {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #5C5549;
+        text-transform: uppercase;
+        border-bottom: 1px solid #D6C7B3;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-editor-container {
+        border: 1px solid #D6C7B3 !important;
+        border-radius: 4px;
+        background-color: #FFFFFF !important;
+        margin-bottom: 30px;
+    }
+
+    .clinical-signoff {
+        border-top: 1px solid #D6C7B3;
+        padding-top: 20px;
+        margin-top: 40px;
+    }
+
+    .clinical-signature-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 20px;
+    }
+
+    .clinical-signature-col {
+        width: 45%;
+    }
+
+    .clinical-signature-label {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: #9E8665;
+        text-transform: uppercase;
+        border-bottom: 1px solid #D6C7B3;
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-signature-name {
+        font-size: 1.15rem;
+        font-weight: 700;
+        font-style: italic;
+        color: #3C3529;
+        margin: 0;
+    }
+
+    .clinical-signature-imc {
+        font-size: 0.85rem;
+        color: #5C5549;
+        margin: 2px 0 0 0;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-signature-status {
+        font-size: 0.8rem;
+        color: #9E8665;
+        text-align: right;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-signature-date {
+        font-size: 0.85rem;
+        color: #3C3529;
+        font-weight: 600;
+        text-align: right;
+        margin-top: 2px;
+        font-family: Arial, sans-serif !important;
+    }
+
+    /* Clinical Invoice Styles */
+    .clinical-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0 35px 0;
+        font-family: Arial, sans-serif !important;
+    }
+
+    .clinical-table th {
+        border-bottom: 2px solid #3C3529 !important;
+        color: #5C5549 !important;
+        font-weight: 700 !important;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        padding: 12px 10px !important;
+        text-align: left;
+    }
+
+    .clinical-table td {
+        border-bottom: 1px dotted #E6DEC3 !important;
+        color: #3C3529 !important;
+        font-size: 0.9rem;
+        padding: 15px 10px !important;
+    }
+
+    .clinical-table tr.total-row td {
+        border-top: 1px solid #3C3529 !important;
+        border-bottom: 2px double #3C3529 !important;
+        font-weight: 700;
+        font-size: 0.95rem;
+        color: #3C3529 !important;
+        text-transform: uppercase;
+    }
 </style>
 
 <!-- Invoice Modal -->
 <div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
-        <div class="modal-content" style="border-radius: 8px; border: none; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
-            <div class="modal-header py-3" style="border-bottom: 2px solid #f0f0f0;">
-                <h6 class="modal-title fw-bold" id="invoiceModalLabel" style="color: #2b3a55; font-size: 1rem;">Invoice
-                </h6>
+        <div class="modal-content" style="border-radius: 12px; border: none; box-shadow: 0 15px 35px rgba(0,0,0,0.15); background-color: #fff;">
+            <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5">
-                <!-- Logo -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div
-                        style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                        <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                        <div
-                            style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                        </div>
-                    </div>
-                    <span class="fs-4 fw-bold ms-2" style="color: #38b2ac; letter-spacing: 0.5px;">CallDoc</span>
+            <div class="modal-body clinical-document" id="invoiceContent">
+                <!-- Logo Header -->
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
-                <div class="row mb-5">
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'N/A') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <!-- Title Box -->
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Invoice</h5>
+                    <div class="clinical-meta">
+                        <strong>Invoice ID:</strong> INV-00{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
+                    </div>
+                </div>
+
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Doctor Info</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Role:</span>
+                            <span class="clinical-row-value">{{ ucfirst($registration->doctor->role ?? 'N/A') }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-0" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Invoice ID:</span>
-                            <span style="color: #718096;">INV-00{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="mb-4 text-start">
-                    <p style="color: #718096; font-size: 0.9rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, y') }}
-                    </p>
+                <!-- Intro Box -->
+                <div class="clinical-intro-box">
+                    Thanks for choosing CallDoc! Below is the statement of account for your recent consultation.
                 </div>
 
-                <div class="table-responsive mb-5">
-                    <table class="table" style="border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+                <!-- Invoice Details Table -->
+                <div class="table-responsive">
+                    <table class="clinical-table">
                         <thead>
-                            <tr style="border-bottom: 1px solid #e2e8f0;">
-                                <th class="border-0 fw-normal py-3"
-                                    style="color: #718096; font-size: 0.9rem; padding-left: 0;">Description</th>
-                                <th class="border-0 fw-normal py-3 text-end"
-                                    style="color: #718096; font-size: 0.9rem; padding-right: 0;">Amount</th>
+                            <tr>
+                                <th>Description</th>
+                                <th class="text-end">Amount</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="border-0 py-4" style="color: #4a5568; font-size: 0.9rem; padding-left: 0;">
-                                    Telephone Consultation - Paid by the Customer Already.</td>
-                                <td class="border-0 py-4 text-end"
-                                    style="color: #4a5568; font-size: 0.9rem; padding-right: 0;"></td>
+                                <td>Telephone Consultation - Paid by the Customer Already.</td>
+                                <td class="text-end">€60.00</td>
                             </tr>
-                            <tr style="border-top: 1px solid #e2e8f0;">
-                                <td class="border-0 py-3" style="color: #4a5568; font-size: 0.9rem; padding-left: 0;">
-                                    Total</td>
-                                <td class="border-0 py-3 text-end"
-                                    style="color: #4a5568; font-size: 0.9rem; padding-right: 0;"></td>
+                            <tr class="total-row">
+                                <td>Total (Paid)</td>
+                                <td class="text-end">€60.00</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div style="color: #718096; font-size: 0.85rem;">
-                    <p class="mb-1">Thanks for choosing CallDoc!</p>
-                    <p class="mb-4">Visit www.calldoc.ie to book an appointment with our doctors</p>
-                    <p class="mb-0">All enquires must be directed to billing@calldoc.ie</p>
+                <!-- Footer note in matching style -->
+                <div style="font-size: 0.85rem; color: #5C5549; line-height: 1.6; border-top: 1px solid #D6C7B3; padding-top: 20px; font-family: Arial, sans-serif !important;">
+                    <p class="mb-1"><strong>Visit:</strong> <a href="https://www.calldoc.ie" target="_blank" style="color: #9E8665; text-decoration: none;">www.calldoc.ie</a> to book an appointment with our doctors.</p>
+                    <p class="mb-0"><strong>Billing Enquiries:</strong> All enquires must be directed to <a href="mailto:billing@calldoc.ie" style="color: #9E8665; text-decoration: none;">billing@calldoc.ie</a>.</p>
+                </div>
+
+                <!-- Sign-off Section -->
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer border-top-0 pt-0 pb-4 pe-4 pb-md-5 pe-md-5 d-flex justify-content-end gap-2">
-                <button type="button" class="btn text-white fw-bold px-4 py-2"
-                    onclick="generatePDF(this.closest('.modal').id)"
-                    style="background-color: #d81b60; font-size: 0.75rem; border-radius: 6px; letter-spacing: 0.5px;">GENERATE</button>
-                <button type="button" class="btn text-white fw-bold px-4 py-2" data-bs-dismiss="modal"
-                    style="background-color: #718096; font-size: 0.75rem; border-radius: 6px; letter-spacing: 0.5px;">CANCEL</button>
+            <!-- Controls -->
+            <div class="modal-footer border-0 p-4 pe-5 pb-5 d-flex justify-content-end gap-3">
+                <button type="button" class="btn text-white fw-bold px-5 py-2"
+                    onclick="generatePDF('invoiceModal')" id="generateBtn_invoiceModal"
+                    style="background-color: #d81b60; border-radius: 8px; font-size: 0.85rem; letter-spacing: 0.5px;">GENERATE</button>
+                <button type="button" class="btn btn-light fw-bold px-5 py-2" data-bs-dismiss="modal"
+                    style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 8px; font-size: 0.85rem; letter-spacing: 0.5px; color: #6c757d;">CANCEL</button>
             </div>
         </div>
     </div>
@@ -252,106 +481,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="referralLetterContent">
+            <div class="modal-body clinical-document" id="referralLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">ED Referral</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">ED Referral</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">Dear Doctor, I am referring this patient with
-                            the following history.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    Dear Doctor, I am referring this patient with the following history.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="referralImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -426,23 +624,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Your s Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -472,106 +670,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="pathologyLetterContent">
+            <div class="modal-body clinical-document" id="pathologyLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">Pathology Requisition</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Pathology Requisition</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">Dear Pathologist, please perform the
-                            investigations as requested below for this patient.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    Dear Pathologist, please perform the investigations as requested below for this patient.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="pathologyImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -643,23 +810,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Yours Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -688,106 +855,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="radiographyLetterContent">
+            <div class="modal-body clinical-document" id="radiographyLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">RADIOGRAPHY REFERRED</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Radiography Referred</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">Dear Radiologist, please perform the
-                            examinations as requested below for this patient.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    Dear Radiologist, please perform the examinations as requested below for this patient.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="radiographyImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -860,23 +996,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Yours Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -905,106 +1041,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="fitToWorkLetterContent">
+            <div class="modal-body clinical-document" id="fitToWorkLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">FIT TO WORK CERTIFICATE</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Fit To Work Certificate</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">To whom it may concern, this is a medical
-                            certificate of fitness for work for the above named patient.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    To whom it may concern, this is a medical certificate of fitness for work for the above named patient.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="fitToWorkImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -1078,23 +1183,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Yours Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1124,106 +1229,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="medicalLetterContent">
+            <div class="modal-body clinical-document" id="medicalLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">MEDICAL CERTIFICATE</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Medical Certificate</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">To whom it may concern, this is a medical
-                            certificate for the above named patient.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    To whom it may concern, this is a medical certificate for the above named patient.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="medicalImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -1299,23 +1373,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Yours Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1343,106 +1417,75 @@
             <div class="modal-header border-0 pb-0 pe-4 pt-4">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body p-4 p-md-5" id="specialistReferralLetterContent">
+            <div class="modal-body clinical-document" id="specialistReferralLetterContent">
                 <!-- Logo Header -->
-                <div class="mb-5 d-flex align-items-center">
-                    <div style="position: relative; width: 45px; height: 45px;">
-                        <div
-                            style="width: 45px; height: 45px; background: conic-gradient(#4fd1c5 0%, #4fd1c5 33%, #90cdf4 33%, #90cdf4 66%, #a0aec0 66%, #a0aec0 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative;">
-                            <div style="width: 30px; height: 30px; background-color: white; border-radius: 50%;"></div>
-                            <div
-                                style="width: 8px; height: 8px; background-color: white; border-radius: 50%; position: absolute; bottom: 5px; left: 5px;">
-                            </div>
-                        </div>
-                    </div>
-                    <span class="fs-2 fw-bold ms-3" style="color: #4fd1c5; letter-spacing: -0.5px;">CallDoc</span>
+                <div class="clinical-header">
+                    <div class="clinical-logo">CALL<span>DOC</span></div>
                 </div>
 
                 <!-- Title Box -->
-                <div class="mb-5">
-                    <div
-                        style="border: 1px solid #ced4da; border-radius: 8px; padding: 10px 20px; display: inline-block; min-width: 400px; max-width: 100%;">
-                        <span style="color: #495057; font-size: 1.1rem;">SPECIALIST REFERRAL</span>
+                <div class="clinical-title-row">
+                    <h5 class="clinical-title">Specialist Referral</h5>
+                    <div class="clinical-meta">
+                        <strong>ID:</strong> #{{ $registration->id }} &nbsp;&nbsp;|&nbsp;&nbsp; 
+                        <strong>Date:</strong> {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('d M, Y') }}
                     </div>
                 </div>
 
-                <div class="row mb-5">
-                    <!-- Left: Doctor Info -->
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Doctor Info</h6>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Registration ID:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Name:
-                            {{ $registration->doctor->name ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Role:
-                            {{ ucfirst($registration->doctor->role ?? 'Doctor') }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Phone No:
-                            {{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}
-                        </p>
-                        <p class="mb-1" style="color: #718096; font-size: 0.9rem;">Address:
-                            {{ $registration->doctor->addressRegister->address ?? 'N/A' }}
-                        </p>
-                        <div class="mb-1"
-                            style="color: #718096; font-size: 0.9rem; display: flex; align-items: flex-start;">
-                            <span class="me-2">Signature:</span>
-                            @if(!empty($registration->doctor->signatureRegister->signature))
-                                <img src="{{ asset('storage/' . ($registration->doctor->signatureRegister->signature ?? '')) }}"
-                                    alt="Signature"
-                                    style="max-height: 40px; border-radius: 4px; border: 1px solid #e2e8f0; padding: 2px;">
-                            @else
-                                N/A
-                            @endif
+                <div class="clinical-grid">
+                    <!-- Left: Referring Physician -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-plus-square-fill"></i> Referring Physician</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->name ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Clinic:</span>
+                            <span class="clinical-row-value">CallDoc Ltd</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Phone:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->phoneRegister->phone ?? 'N/A' }}</span>
+                        </div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->doctor->addressRegister->address ?? 'N/A' }}</span>
                         </div>
                     </div>
 
-                    <!-- Right: Patient Info -->
-                    <div class="col-md-6 ps-md-4">
-                        <h6 class="fw-bold mb-3" style="color: #4a5568;">Patient Info</h6>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Name:</span>
-                            <span style="color: #718096;">{{ $registration->patient_first_name }}
-                                {{ $registration->patient_last_name }}</span>
+                    <!-- Right: Patient Details -->
+                    <div class="clinical-col">
+                        <div class="clinical-section-header"><i class="bi bi-person-fill"></i> Patient Details</div>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Name:</span>
+                            <span class="clinical-row-value">{{ $registration->patient_first_name }} {{ $registration->patient_last_name }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Address:</span>
-                            <span style="color: #718096;">{{ $registration->address ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">DOB:</span>
+                            <span class="clinical-row-value">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('d M, Y') : 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Contact:</span>
-                            <span style="color: #718096;">{{ $registration->mobile ?: 'N/A' }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Contact:</span>
+                            <span class="clinical-row-value">{{ $registration->mobile ?: 'N/A' }}</span>
                         </div>
-                        <div class="d-flex mb-1" style="font-size: 0.9rem;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">DOB:</span>
-                            <span
-                                style="color: #718096;">{{ $registration->bod_of_birth ? \Carbon\Carbon::parse($registration->bod_of_birth)->format('M d, y') : 'N/A' }}</span>
-                        </div>
-
-                        <div class="d-flex mb-0 mt-3 pt-2" style="font-size: 0.9rem; border-top: 1px dashed #e2e8f0;">
-                            <span class="fw-bold" style="color: #4a5568; width: 120px;">Appointment ID:</span>
-                            <span style="color: #718096;">{{ $registration->id }}</span>
+                        <div class="clinical-row">
+                            <span class="clinical-row-label">Address:</span>
+                            <span class="clinical-row-value">{{ $registration->address ?: 'N/A' }}</span>
                         </div>
                     </div>
-                </div>
-
-                <div class="mb-4">
-                    <p style="color: #6c757d; font-size: 0.95rem;">Appointment Date:
-                        {{ \Carbon\Carbon::parse($registration->appointmentDate)->format('M d, y') }}
-                    </p>
                 </div>
 
                 <!-- Intro Text Box -->
-                <div class="mb-4">
-                    <div style="border: 1px solid #ced4da; border-radius: 8px; padding: 12px 20px;">
-                        <span style="color: #495057; font-size: 0.95rem;">Dear Colleague, I am referring this patient
-                            for further specialist consultation and management as detailed below.</span>
-                    </div>
+                <div class="clinical-intro-box">
+                    Dear Colleague, I am referring this patient for further specialist consultation and management as detailed below.
                 </div>
 
+                <!-- Clinical Details Header -->
+                <div class="clinical-details-header"><i class="bi bi-file-earmark-text-fill"></i> Clinical Details & Assessment</div>
+
                 <!-- Tool Editor Section -->
-                <div class="border rounded mb-5" style="overflow: hidden;">
+                <div class="clinical-editor-container" style="overflow: hidden;">
                     <input type="file" id="specialistReferralImageInput" accept="image/*" style="display: none;">
                     <div class="bg-light p-2 border-bottom d-flex align-items-center gap-2 flex-wrap">
                         <div class="btn-group btn-group-sm bg-white border rounded">
@@ -1515,23 +1558,23 @@
                 </div>
 
                 <!-- Sign-off Section -->
-                <div class="mt-5">
-                    <p class="mb-1" style="color: #6c757d;">Thanks,</p>
-                    <p class="mb-4" style="color: #6c757d;">Yours Sincerely</p>
-
-                    <div class="mt-4">
-                        <p class="mb-1 small" style="color: #adb5bd;">Signed</p>
-                        @if(!empty($registration->doctor->signatureRegister->signature))
-                            <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
-                                alt="Signature" style="max-height: 100px; margin-bottom: 5px;">
-                        @else
-                            <div style="height: 80px; width: 250px; border-bottom: 2px solid #f1f3f5; margin-bottom: 15px;">
-                            </div>
-                        @endif
-                        <p class="mb-0 fw-bold text-dark">{{ $registration->doctor->name ?? 'N/A' }}</p>
-                        <p class="mb-0 small" style="color: #6c757d;">IMC:
-                            {{ $registration->doctor->register_id ?? 'N/A' }}
-                        </p>
+                <div class="clinical-signoff">
+                    <div class="clinical-signature-label">Authorised Signature</div>
+                    <div class="clinical-signature-row">
+                        <div class="clinical-signature-col">
+                            @if(!empty($registration->doctor->signatureRegister->signature))
+                                <img src="{{ asset('storage/' . $registration->doctor->signatureRegister->signature) }}"
+                                    alt="Signature" style="max-height: 70px; margin-bottom: 5px; mix-blend-mode: multiply;">
+                            @else
+                                <div style="height: 60px; border-bottom: 2px solid #d6c7b3; margin-bottom: 10px;"></div>
+                            @endif
+                            <h6 class="clinical-signature-name">{{ $registration->doctor->name ?? 'N/A' }}</h6>
+                            <p class="clinical-signature-imc">IMC: {{ $registration->doctor->register_id ?? 'N/A' }}</p>
+                        </div>
+                        <div class="clinical-signature-col text-end">
+                            <p class="clinical-signature-status">Electronically Signed</p>
+                            <p class="clinical-signature-date">{{ date('d/m/Y H:i') }}</p>
+                        </div>
                     </div>
                 </div>
             </div>
