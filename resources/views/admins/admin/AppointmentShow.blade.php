@@ -1009,7 +1009,7 @@
 
     <!-- Invoice Modal -->
     <!-- Invoice Modal -->
-    <div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal fade" id="OLD_invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content doc-modal-content">
                 <div class="doc-modal-header d-flex justify-content-between align-items-center">
@@ -1540,7 +1540,7 @@
 
     <!-- start code fifth model  -->
 
-    <div class="modal fade" id="FITTOWORKCERTIFICATEModel" tabindex="-1" aria-labelledby="FITTOWORKCERTIFICATEModel"
+    <div class="modal fade" id="OLD_FITTOWORKCERTIFICATEModel" tabindex="-1" aria-labelledby="FITTOWORKCERTIFICATEModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"
@@ -1742,7 +1742,7 @@
     <!-- start sixth model  -->
 
 
-    <div class="modal fade" id="MEDICALCERTIFICATEModel" tabindex="-1" aria-labelledby="MEDICALCERTIFICATEModel"
+    <div class="modal fade" id="OLD_MEDICALCERTIFICATEModel" tabindex="-1" aria-labelledby="MEDICALCERTIFICATEModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"
@@ -1944,7 +1944,7 @@
 
     <!-- start code seven model -->
 
-    <div class="modal fade" id="SPECIALISTREFERRALModel" tabindex="-1" aria-labelledby="SPECIALISTREFERRALModel"
+    <div class="modal fade" id="OLD_SPECIALISTREFERRALModel" tabindex="-1" aria-labelledby="SPECIALISTREFERRALModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"

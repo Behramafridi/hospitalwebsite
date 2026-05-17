@@ -479,7 +479,7 @@
     </style>
 
     <!-- Invoice Modal -->
-    <div class="modal fade" id="invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
+    <div class="modal fade" id="OLD_invoiceModal" tabindex="-1" aria-labelledby="invoiceModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content" style="border-radius: 8px; border: none; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
                 <div class="modal-header py-3" style="border-bottom: 2px solid #f0f0f0;">
@@ -1215,7 +1215,7 @@
 
     <!-- start code fifth model  -->
 
-    <div class="modal fade" id="FITTOWORKCERTIFICATEModel" tabindex="-1" aria-labelledby="FITTOWORKCERTIFICATEModel"
+    <div class="modal fade" id="OLD_FITTOWORKCERTIFICATEModel" tabindex="-1" aria-labelledby="FITTOWORKCERTIFICATEModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"
@@ -1417,7 +1417,7 @@
     <!-- start sixth model  -->
 
 
-    <div class="modal fade" id="MEDICALCERTIFICATEModel" tabindex="-1" aria-labelledby="MEDICALCERTIFICATEModel"
+    <div class="modal fade" id="OLD_MEDICALCERTIFICATEModel" tabindex="-1" aria-labelledby="MEDICALCERTIFICATEModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"
@@ -1619,7 +1619,7 @@
 
     <!-- start code seven model -->
 
-    <div class="modal fade" id="SPECIALISTREFERRALModel" tabindex="-1" aria-labelledby="SPECIALISTREFERRALModel"
+    <div class="modal fade" id="OLD_SPECIALISTREFERRALModel" tabindex="-1" aria-labelledby="SPECIALISTREFERRALModel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content"
