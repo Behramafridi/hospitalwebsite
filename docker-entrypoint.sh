@@ -1,19 +1,37 @@
 #!/bin/sh
 set -e
 
-# Fix SQLite database file permissions at runtime (in case the container remounts)
+# ---------------------------------------------------------------
+# Force file-based drivers so SQLite readonly errors never occur
+# These override whatever SESSION_DRIVER/CACHE_STORE is set in env
+# ---------------------------------------------------------------
+export SESSION_DRIVER=file
+export CACHE_STORE=file
+export QUEUE_CONNECTION=sync
+
+# Fix SQLite database file permissions at runtime
 echo "Setting up database permissions..."
+mkdir -p /var/www/html/database
 touch /var/www/html/database/database.sqlite
-chown www-data:www-data /var/www/html/database/database.sqlite
-chmod 664 /var/www/html/database/database.sqlite
-chown -R www-data:www-data /var/www/html/database
-chmod -R 775 /var/www/html/database
+chmod 777 /var/www/html/database
+chmod 666 /var/www/html/database/database.sqlite
 
 # Fix storage and bootstrap/cache permissions
-chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
-chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+chmod -R 777 /var/www/html/storage
+chmod -R 777 /var/www/html/bootstrap/cache
 
-# Run standard optimization/caching commands at runtime so they pick up active environment variables
+# Fix sessions/views/framework directories
+mkdir -p /var/www/html/storage/framework/sessions
+mkdir -p /var/www/html/storage/framework/views
+mkdir -p /var/www/html/storage/framework/cache
+chmod -R 777 /var/www/html/storage/framework
+
+# Clear cached config first (important: must run before config:cache)
+echo "Clearing old caches..."
+php artisan config:clear || true
+php artisan cache:clear || true
+
+# Run standard optimization/caching commands at runtime
 echo "Caching Laravel configuration, routes, and views..."
 php artisan config:cache
 php artisan route:cache
