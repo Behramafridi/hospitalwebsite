@@ -1788,7 +1788,7 @@
 
                 // Final Duplicate Check on Next click
                 try {
-                    const response = await fetch("{{ route('check.email') }}", {
+                    const response = await fetch("/check-email", {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -1855,7 +1855,7 @@
                 loginBtn.disabled = true;
                 loginBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span> Logging in...';
 
-                const response = await fetch("{{ route('login.wizard') }}", {
+                const response = await fetch("/login-wizard", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -12599,7 +12599,7 @@
                     }
 
                     try {
-                        const response = await fetch("{{ route('check.email') }}", {
+                        const response = await fetch("/check-email", {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json',
@@ -12710,7 +12710,7 @@
             }
 
             try {
-                const response = await fetch("{{ route('appointment.store') }}", {
+                const response = await fetch("/patient-registration", {
                     method: 'POST',
                     body: formData,
                     headers: {

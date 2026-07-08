@@ -2321,7 +2321,7 @@
                     }
 
                     // 6. Save to Backend via AJAX (No reload)
-                    fetch('{{ route("admin.certificate.store") }}', {
+                    fetch('/admin/certificate/store', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
@@ -2632,7 +2632,7 @@
                     }
 
                     // Save to database via AJAX
-                    fetch('{{ route('doctor.prescription.store') }}', {
+                    fetch('/doctor/prescription/store', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',

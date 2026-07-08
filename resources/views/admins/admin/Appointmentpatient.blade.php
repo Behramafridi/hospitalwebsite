@@ -1975,7 +1975,7 @@
                     }
 
                     // 6. Save to Backend via AJAX (No reload)
-                    fetch('{{ route("admin.certificate.store") }}', {
+                    fetch('/admin/certificate/store', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json',
