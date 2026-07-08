@@ -64,8 +64,12 @@ COPY --from=frontend-builder /app/public/build /var/www/html/public/build
 # Copy production php.ini config
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
-# Set permissions for Laravel directories
-RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+# Set permissions for Laravel directories (including database for SQLite)
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache /var/www/html/database \
+    && touch /var/www/html/database/database.sqlite \
+    && chown www-data:www-data /var/www/html/database/database.sqlite \
+    && chmod 664 /var/www/html/database/database.sqlite
 
 # Copy and set entrypoint script
 COPY docker-entrypoint.sh /usr/local/bin/
