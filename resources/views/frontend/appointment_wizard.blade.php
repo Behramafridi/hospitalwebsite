@@ -698,11 +698,10 @@
     <br>
 
     <!-- Header -->
-
-    <!-- Header / Navigation -->
-  <header id="main-header">
+    <header id="main-header" style="margin-top:-6%">
+        <!-- Top Info Bar -->
         <div class="header-top d-none d-lg-block">
-            <div class="container text-center text-lg-start">
+            <div class="container">
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="d-flex gap-4">
                         <a href="mailto:info@citycentral.ie"><i class="fa-regular fa-envelope me-2"></i> info@citycentral.ie</a>
@@ -717,6 +716,7 @@
             </div>
         </div>
 
+        <!-- Main Nav -->
         <div class="main-nav">
             <div class="container">
                 <nav class="d-flex justify-content-between align-items-center">
@@ -727,23 +727,128 @@
                         <span class="fs-4 fw-bold" style="color: var(--primary); font-family: 'Outfit';">CITY <span style="color: var(--primary-light);">CENTRAL</span></span>
                     </a>
 
-                    <ul class="nav-links mb-0 d-none d-lg-flex">
-                        <li><a href="{{route('home')}}">Home</a></li>
+                    <ul class="nav-links mb-0">
+                        <li><a href="{{route('home')}}" class="active">Home</a></li>
                         <li><a href="{{route('about')}}">About</a></li>
-                        <li><a href="{{route('service')}}" class="active">Services</a></li>
+                        <li><a href="{{route('service')}}">Services</a></li>
                         <li><a href="#">Doctors</a></li>
                         <li><a href="{{route('contact')}}">Contact</a></li>
                     </ul>
 
                     <div class="d-flex gap-3">
-                        <a href="{{ route('login') }}" class="btn btn-outline d-none d-sm-flex">SIGN IN</a>
-                        <a href="{{ route('appointment') }}" class="btn btn-primary">BOOK NOW</a>
-                        <button class="btn d-lg-none p-2 shadow-none" id="mobileMenuToggle" style="color: var(--primary);"><i class="fa-solid fa-bars fs-3"></i></button>
+                        <a href="{{ route('login') }}" class="btn btn-outline d-none d-sm-flex" style="padding: 0.75rem 1.5rem;">SIGN IN</a>
+                        <a href="{{ route('appointment') }}" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">BOOK NOW</a>
+                        <button class="btn d-lg-none p-2" id="mobileMenuToggle" style="color: var(--primary);"><i class="fa-solid fa-bars fs-3"></i></button>
                     </div>
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav-drawer" id="mobileNavDrawer">
+        <div class="d-flex justify-content-between align-items-center mb-5">
+            <span class="fs-4 fw-bold" style="color: var(--primary);">MENU</span>
+            <button class="btn p-0" id="closeMobileMenu"><i class="fa-solid fa-xmark fs-2 text-primary"></i></button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="{{route('home')}}">Home</a></li>
+            <li><a href="{{route('about')}}">About</a></li>
+            <li><a href="{{route('service')}}">Services</a></li>
+            <li><a href="#">Doctors</a></li>
+            <li><a href="{{route('contact')}}">Contact</a></li>
+        </ul>
+        <div class="mt-5 d-flex flex-column gap-3">
+            <a href="{{ route('login') }}" class="btn btn-outline w-100 justify-content-center">SIGN IN</a>
+            <a href="{{ route('appointment') }}" class="btn btn-primary w-100 justify-content-center">BOOK NOW</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section with Premium Slider -->
+        <section class="hero">
+            <div class="slider-container">
+                <!-- Slide 1 -->
+                <div class="slide active" style="background-image: url('OIP (4).jpg');">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1>Excellence in <br><span style="color: var(--secondary);">Modern Care</span></h1>
+                            <p>Delivering state-of-the-art medical solutions with a patient-first philosophy and world-class expertise.</p>
+                            <div class="hero-btns">
+                                <a href="{{ route('appointment') }}" class="btn btn-primary">START CONSULTATION <i class="fa-solid fa-arrow-right"></i></a>
+                                <a href="{{ route('service') }}" class="btn btn-outline" style="border-color: white; color: white;">OUR SPECIALITIES</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide" style="background-image: url('OIP.jpg');">
+                    <div class="container">
+                        <div class="hero-content">
+                            <h1>Precision <br><span style="color: var(--secondary);">Diagnostics</span></h1>
+                            <p>Advanced imaging and laboratory services for accurate diagnosis and personalized treatment plans.</p>
+                            <div class="hero-btns">
+                                <a href="{{ route('appointment') }}" class="btn btn-primary">BOOK A TEST <i class="fa-solid fa-calendar-check"></i></a>
+                                <a href="{{ route('about') }}" class="btn btn-outline" style="border-color: white; color: white;">LEARN MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Custom Navigation Controls -->
+            <div style="position: absolute; bottom: 150px; right: 5%; z-index: 100; display: flex; flex-direction: column; gap: 1rem;">
+                <button id="prevSlide" class="btn rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: rgba(255,255,255,0.1); backdrop-filter: blur(5px); color: white; border: 1px solid rgba(255,255,255,0.2);">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+                <button id="nextSlide" class="btn rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; background: var(--primary-light); color: white; border: none;">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Stats Section (Floating) -->
+        <section class="container floating-info">
+            <div class="stats">
+                <div class="row g-4 text-center">
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="15000">0</h3>
+                            <p>Patients Cared</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item">
+                            <h3 class="counter" data-target="250">0</h3>
+                            <p>Expert Doctors</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item border-start-md">
+                            <h3 class="counter" data-target="98">0</h3>
+                            <p>Success Rate %</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <div class="stat-item border-start-md">
+                            <h3 class="counter" data-target="25">0</h3>
+                            <p>Years Excellence</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+      
+
+        <!-- How It Works (Premium Dark Theme) -->
+      
+
+      
+    </main>
+    <!-- Header / Navigation -->
 
     <div class="container py-4 py-md-5 mt-3 mt-md-5">
 

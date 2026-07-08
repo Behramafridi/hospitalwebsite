@@ -12,6 +12,8 @@
 
         body {
             /* Premium Medical Background */
+            background-color: #3fafb1;
+            color: #d8ebef;
             background-image: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1920&q=80');
             background-size: cover;
             background-position: center;
@@ -34,7 +36,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(13, 110, 253, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
+            background: linear-gradient(135deg, rgba(63, 175, 177, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%);
             z-index: 1;
         }
 
@@ -265,16 +267,20 @@
             font-weight: 600;
             font-size: 16px;
             letter-spacing: 0.5px;
-            background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+            background-color: #d8ebef !important;
+            background: #d8ebef !important;
+            color: #3fafb1 !important;
             border: none;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+            box-shadow: 0 4px 10px rgba(63, 175, 177, 0.3);
         }
 
         .btn-primary:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 15px rgba(13, 110, 253, 0.4);
-            background: linear-gradient(135deg, #0b5ed7 0%, #084298 100%);
+            box-shadow: 0 8px 15px rgba(63, 175, 177, 0.4);
+            background-color: #c4e4e9 !important;
+            background: #c4e4e9 !important;
+            color: #3fafb1 !important;
         }
 
         .form-check-input:checked {

@@ -4,7 +4,8 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "dev": "vite"
+        "dev": "vite",
+        "deploy": "git add . && git commit -m \"automatic deployment update\" && git push origin main"
     },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
