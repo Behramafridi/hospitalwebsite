@@ -13,7 +13,9 @@ return new class extends Migration
     public function up(): void
     {
         // Use DYNAMIC row format to support large row sizes (many columns)
-        DB::statement('SET SESSION innodb_strict_mode=OFF');
+        if (\Illuminate\Support\Facades\DB::connection()->getConfig('driver') === 'mysql') {
+            \Illuminate\Support\Facades\DB::statement('SET SESSION innodb_strict_mode=OFF');
+        }
 
         Schema::create('patient_registrations', function (Blueprint $table) {
             $table->id();

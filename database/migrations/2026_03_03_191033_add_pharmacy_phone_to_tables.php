@@ -12,7 +12,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        DB::statement('SET SESSION innodb_strict_mode=OFF');
+        if (\Illuminate\Support\Facades\DB::connection()->getConfig('driver') === 'mysql') {
+            \Illuminate\Support\Facades\DB::statement('SET SESSION innodb_strict_mode=OFF');
+        }
 
         if (!Schema::hasColumn('patient_registrations', 'pharmacyPhone')) {
             Schema::table('patient_registrations', function (Blueprint $table) {

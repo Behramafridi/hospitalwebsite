@@ -13,7 +13,9 @@ return new class extends Migration
     public function up(): void
     {
         // Disable strict mode to allow adding columns to large tables
-        DB::statement('SET SESSION innodb_strict_mode=OFF');
+        if (\Illuminate\Support\Facades\DB::connection()->getConfig('driver') === 'mysql') {
+            \Illuminate\Support\Facades\DB::statement('SET SESSION innodb_strict_mode=OFF');
+        }
 
         if (!Schema::hasColumn('patient_registrations', 'hasMedications')) {
             Schema::table('patient_registrations', function (Blueprint $table) {
