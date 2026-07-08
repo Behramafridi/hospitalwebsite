@@ -11,7 +11,7 @@ WORKDIR /app
 COPY composer.json composer.lock ./
 RUN composer install --ignore-platform-reqs --no-interaction --no-plugins --no-scripts --prefer-dist --no-dev --optimize-autoloader
 COPY . .
-RUN composer dump-autoload --no-dev --optimize-autoloader --ignore-platform-reqs
+RUN composer dump-autoload --no-dev --optimize --ignore-platform-reqs
 
 # Stage 3: Final Production Runtime Image
 FROM php:8.2-apache
