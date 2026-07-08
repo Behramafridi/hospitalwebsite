@@ -6,5 +6,4 @@ vendor
 .phpunit.result.cache
 tests
 storage/logs/*.log
-Dockerfile
 README.md
