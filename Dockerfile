@@ -2,7 +2,7 @@
 FROM node:20 AS frontend-builder
 WORKDIR /app
 COPY . .
-RUN npm ci
+RUN npm install
 RUN npm run build
 
 # Stage 2: Build PHP Dependencies
