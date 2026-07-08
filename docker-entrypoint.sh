@@ -37,9 +37,11 @@ php artisan config:cache
 php artisan route:cache
 php artisan view:cache
 
-# Run database migrations automatically on deploy
+# Run database migrations and seeders automatically on deploy
 echo "Running database migrations..."
 php artisan migrate --force || echo "Database migrations failed! Please check your database connection variables."
+echo "Running database seeders..."
+php artisan db:seed --force || echo "Database seeding failed!"
 
 # Run the default container command (apache2-foreground)
 echo "Starting Apache..."
